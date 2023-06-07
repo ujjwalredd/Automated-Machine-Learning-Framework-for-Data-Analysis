@@ -9,10 +9,10 @@ A machine learning framework for automated data analysis tasks is provided by th
 
 # Usage
 * Ensure you have Python 3.x installed on your system.
-* Install the required dependencies by running the following command: "pip install -r requirements.txt"
+* Install the required dependencies by running the following command: `pip install -r requirements.txt`
 * Prepare your dataset in a compatible format. The dataset should be a CSV file with the target variable in a separate column.
 * Modify the code to load your dataset and specify the relevant columns for features and the target variable.
-* Run the code using a Python interpreter (Main.py).
+* Run the code using a Python interpreter (`main.py`).
 * The code will automatically perform feature selection, train multiple machine learning models, optimize their hyperparameters, and evaluate their performance.
 * The best classification model and the best regression model will be displayed, along with their respective accuracy scores or MSE scores.
 
