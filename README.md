@@ -24,7 +24,7 @@ The code requires the following dependencies to be installed:
 You can install the dependencies using the following command: "pip install -r requirements.txt"
 
 # License
-This code is released under the MIT License.
+This code is released under the [MIT License](LICENSE).
 
 Feel free to modify and use the code according to your needs. Contributions are welcome!
 
