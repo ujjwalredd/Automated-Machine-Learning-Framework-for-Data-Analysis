@@ -21,7 +21,7 @@ The code requires the following dependencies to be installed:
 * pandas
 * numpy
 * scikit-learn
-You can install the dependencies using the following command: "pip install -r requirements.txt"
+You can install the dependencies using the following command: `pip install -r requirements.txt`
 
 # License
 This code is released under the [MIT License](LICENSE).
