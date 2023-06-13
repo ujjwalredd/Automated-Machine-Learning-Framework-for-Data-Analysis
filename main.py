@@ -7,17 +7,18 @@ import pandas as pd
 
 
 #dataset path 
-df = pd.read_csv("-----------------------") #Enter your dataset path 
+def process_data(dataset_path, target_column_name1, use_hyperparameter_optimization):
+    df = pd.read_csv(dataset_path) #Enter your dataset path 
 
-#target column name
-target_column_name = "---------------------" #change to specific name
+    #target column name
+    target_column_name = target_column_name1 #change to specific name
 
-x = df.drop(target_column_name, axis=1)
-y = df[target_column_name]
+    x = df.drop(target_column_name, axis=1)
+    y = df[target_column_name]
 
-st = int(input("Enter value (yes:1 or no:0) for using the Hyperparamter Optimized models fro better results: "))
+    st = use_hyperparameter_optimization
 
-def main():
+
     xx,yy = data_clean(x,y,target_column_name,df)
     featur = feature(xx,yy)
     print("\n-------------------xxxx-------------------------")
@@ -25,12 +26,9 @@ def main():
     print("\n-------------------xxxx-------------------------")
     if st == 0:
         c,r,bc,br = models(xx,yy,featur)
-        Scores(c,r,bc,br)
+        cool = Scores(c,r,bc,br)
     else:
         cc,rr,bbc,bbr = H_optmization(xx,yy,featur)
-        Scores(cc,rr,bbc,bbr)
-    
-        
-    
-if __name__ == "__main__":
-    main()
+        cool = Scores(cc,rr,bbc,bbr)
+
+    return cool
